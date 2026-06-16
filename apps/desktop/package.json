@@ -3,13 +3,13 @@
   "name": "@accomplish/desktop",
   "version": "0.5.17",
   "private": true,
-  "homepage": "https://accomplish.ai",
+  "homepage": "https://www.ballotda.com",
   "author": {
-    "name": "Accomplish Inc",
-    "email": "support@accomplish.ai"
+    "name": "BallotDA",
+    "email": "support@ballotda.com"
   },
   "type": "module",
-  "description": "Accomplish Desktop App",
+  "description": "Nadia Agent Desktop App",
   "main": "dist-electron/main/index.js",
   "scripts": {
     "postinstall": "node scripts/postinstall.cjs",
@@ -113,9 +113,9 @@
   "build": {
     "npmRebuild": false,
     "compression": "normal",
-    "appId": "ai.accomplish.desktop",
-    "productName": "Accomplish",
-    "artifactName": "Accomplish-${version}-${os}-${arch}.${ext}",
+    "appId": "com.ballotda.nadia",
+    "productName": "Nadia Agent",
+    "artifactName": "Nadia-Agent-${version}-${os}-${arch}.${ext}",
     "directories": {
       "output": "release",
       "buildResources": "resources"
@@ -273,7 +273,7 @@
       "allowToChangeInstallationDirectory": false,
       "createDesktopShortcut": true,
       "createStartMenuShortcut": true,
-      "shortcutName": "Accomplish",
+      "shortcutName": "Nadia Agent",
       "runAfterFinish": true,
       "installerIcon": "resources/icon.ico",
       "uninstallerIcon": "resources/icon.ico",

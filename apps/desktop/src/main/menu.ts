@@ -92,18 +92,18 @@ export function buildAppMenu(): void {
       label: 'Help',
       submenu: [
         ...(!isMac ? [updateMenuItem, { type: 'separator' as const }] : []),
-        { label: 'Learn More', click: () => shell.openExternal('https://accomplish.ai') },
+        { label: 'Learn More', click: () => shell.openExternal('https://www.ballotda.com') },
         ...(!isMac
           ? [
               { type: 'separator' as const },
               {
-                label: 'About Accomplish',
+                label: 'About Nadia Agent',
                 click: async () => {
                   await dialog.showMessageBox({
                     type: 'info',
-                    title: 'About Accomplish',
-                    message: 'Accomplish',
-                    detail: `Version ${app.getVersion()}\n\nA desktop automation assistant.\n\n© ${new Date().getFullYear()} Accomplish AI`,
+                    title: 'About Nadia Agent',
+                    message: 'Nadia Agent',
+                    detail: `Version ${app.getVersion()}\n\nA desktop automation assistant.\n\n© ${new Date().getFullYear()} BallotDA`,
                     buttons: ['OK'],
                   });
                 },

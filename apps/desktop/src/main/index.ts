@@ -246,7 +246,7 @@ if (process.env.CLEAN_START === '1') {
   logMain('INFO', '[Clean Mode] userData wiped; daemon will reinitialize on spawn');
 }
 
-app.setName('Accomplish');
+app.setName('Nadia Agent');
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const envPath = app.isPackaged
